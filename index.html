@@ -23,6 +23,29 @@
     <div class="cursor-outline" data-cursor-outline></div>
     <!-- Navegaciòn -->
     <header class="contenedor-header">
+      <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-black-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+        <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
+          <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
+        </div>
+        <div class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
+          <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
+        </div>
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <p class="text-sm leading-6 text-white-900">
+            <strong class="font-semibold">Pablo Volpe 2023</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Click on the following button for a quick contact by WhatsApp
+          </p>
+          <a href="https://api.whatsapp.com/send?phone=5491136365292" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">WhatsApp<span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="flex flex-1 justify-end">
+          <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
+            <span class="sr-only">Dismiss</span>
+            <svg class="h-5 w-5 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      
       <div class="boton">
 				<div class="lineas">
 					<div></div>
@@ -34,10 +57,10 @@
 				<li></li>
 				<!-- usamos una <li> sola para dibujar el triángulo -->
 
-				<li> <a href="#">Studies</a> </li>
-				<li> <a href="#">Menú 2</a> </li>
-				<li> <a href="#">Menú 3</a> </li>
-				<li> <a href="#">Menú 4</a> </li>
+        <li> <a href="#">Landing</a> </li>
+				<li> <a href="#estudios">Studies</a> </li>
+				<li> <a href="#sobremi">About me</a> </li>
+				<li> <a href="#">Proyects</a> </li>
 			</div>
 
 			</ul>
@@ -96,34 +119,34 @@
       <div class=" py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto max-w-2xl lg:mx-0">
-            <h2 class="text-white text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Title</h2>
-            <p class="mt-2 text-white leading-8 text-gray-600">Subtitle Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <h2 class="text-white text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Studies</h2>
+            <p class="mt-2 text-white leading-8 text-gray-600">a sample of my studies and certifications.</p>
           </div>
           <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-white-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3 underline">
             <article class="flex max-w-xl flex-col items-start justify-between secciones">
               <div class="flex items-center gap-x-4 text-xs">
                 <time datetime="2020-03-16" class="text-white">Course calendary</time>
-                <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Coderhouse</a>
+                <a href="https://www.coderhouse.com/certificados/62cc6f94e278bc00194b32e0?lang=es" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Coderhouse</a>
               </div>
               <div class="group relative">
                 <h3 class="mt-3 text-white font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                  <a href="#">
+                  <a href="https://www.coderhouse.com/certificados/62cc6f94e278bc00194b32e0?lang=es" class="__blank">
                     <span class="absolute inset-0" ></span>
-                    Name the course
+                    Web development
                   </a>
                 </h3>
                 <p class="mt-5 line-clamp-3 text-sm leading-6 text-white-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore eligendi fugiat consequatur, quasi dolore hic facere, nesciunt fuga qui mollitia veritatis quisquam repellendus accusantium excepturi!.</p>
               </div>
               <div class="relative mt-8 flex items-center gap-x-4">
-                <img src="./imagenes/Avatar.png" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                <img src="https://media.licdn.com/dms/image/C4D03AQH3VErfhxpDpQ/profile-displayphoto-shrink_800_800/0/1617636411046?e=2147483647&v=beta&t=Qnz9JQSOicl-jL7mu9lDv361QFqJqxFwy4QSdhg--Is" alt="" class="h-10 w-10 rounded-full bg-gray-50">
                 <div class="text-sm leading-6">
                   <p class="font-semibold text-white-900 text-base">
-                    <a href="#">
+                    <a href="https://www.coderhouse.com/certificados/62cc6f94e278bc00194b32e0?lang=es">
                       <span class="absolute inset-0"></span>
-                      Teacher name
+                      José Amador
                     </a>
                   </p>
-                  <p class="text-white-600 text-sm">Profession</p>
+                  <p class="text-white-600 text-sm">Teacher</p>
                 </div>
               </div>
             </article>
@@ -235,104 +258,53 @@
                 </div>
               </div>
             </article>
-            
-            
-      
             <!-- More posts... -->
           </div>
         </div>
       </div>
-      
+     <article class="slide">
+       <img src="./imagenes/bootstrap-logo.png" alt="" class="bootstrap">
+       <img src="./imagenes/css3-1841590_640.png" alt="">
+       <img src="./imagenes/git.png" alt="">
+       <img src="./imagenes/GitHub.png" alt="">
+       <img src="./imagenes/html.png" alt="">
+       <img src="./imagenes/react.png" alt="">
+       <img src="./imagenes/tailwind.png" alt="">
+       <img src="./imagenes/gratis-png-captura-de-pantalla-de-js-verde-y-amarillo-javascript-logo-html-comentario-python-15-thumbnail.png" alt="">
+     </article> 
     </section>
-    <section id="proyectos">
-
-<div>
-  <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-3xl h2">Proyects</h2>
-
-    <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-      <div class="group relative">
-        <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-          <img src="./imagenes/fondo-diseño.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+    <section id="sobremi">
+      <div class="relative isolate overflow-hidden py-24 sm:py-32">
+        <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
         </div>
-        <div class="mt-4 flex justify-between">
-          <div>
-            <h3 class="text-sm text-white">
-              <a href="">
-                <span aria-hidden="true" class="absolute inset-0"></span>
-              </a>
-                
-               Proyecto 1
-
-            </h3>
-            <p class="mt-1 text-sm text-white">Descripcion lorem3</p>
+        <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu" aria-hidden="true">
+          <div class="aspect-[1097/845] w-[68.5625rem] "></div>
+        </div>
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl lg:mx-0">
+            <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">About me</h2>
+            <p class="mt-6 text-lg leading-8 text-gray-300">I am a passionate Front-End developer with a clear vision: to combine creativity and technology to create exceptional web experiences. My goal is to continue honing my skills in HTML, CSS and JavaScript, staying up to date with the latest trends. I aspire to design innovative and accessible websites that captivate users and add value to companies. My goal is to be a leader in the world of web design, building a successful career and collaborating with talented teams.</p>
           </div>
-          <a href="#inicio"><button class="boton-proyectos ">Code<i class="fa-light fab fa fa-code" style="color: #b3adad;"></i></button></a>
+          <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+            
+            <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+              <div class="flex flex-col-reverse">
+                <dt class="text-base leading-7 text-gray-300">Completed courses</dt>
+                <dd class="text-2xl font-bold leading-9 tracking-tight text-white">5</dd>
+              </div>
+              <div class="flex flex-col-reverse">
+                <dt class="text-base leading-7 text-gray-300">Hours of practice</dt>
+                <dd class="text-2xl font-bold leading-9 tracking-tight text-white">300+</dd>
+              </div>
+              <div class="flex flex-col-reverse">
+                <dt class="text-base leading-7 text-gray-300">Hours in courses</dt>
+                <dd class="text-2xl font-bold leading-9 tracking-tight text-white">+100</dd>
+              </div>
+            </dl>
+          </div>
         </div>
       </div>
-      <div class="group relative">
-        <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-          <img src="./imagenes/fondo-diseño.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
-        </div>
-        <div class="mt-4 flex justify-between">
-          <div>
-            <h3 class="text-sm text-white">
-              <a href="">
-                <span aria-hidden="true" class="absolute inset-0"></span>
-              </a>
-                
-               Proyecto 1
-
-            </h3>
-            <p class="mt-1 text-sm text-white">Descripcion lorem3</p>
-          </div>
-          <a href="#inicio"><button class="boton-proyectos ">Code<i class="fa-light fab fa fa-code" style="color: #b3adad;"></i></button></a>
-        </div>
-      </div>
-      <div class="group relative">
-        <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-          <img src="./imagenes/fondo-diseño.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
-        </div>
-        <div class="mt-4 flex justify-between">
-          <div>
-            <h3 class="text-sm text-white">
-              <a href="">
-                <span aria-hidden="true" class="absolute inset-0"></span>
-              </a>
-                
-               Proyecto 1
-
-            </h3>
-            <p class="mt-1 text-sm text-white">Descripcion lorem3</p>
-          </div>
-          <a href="#inicio"><button class="boton-proyectos ">Code<i class="fa-light fab fa fa-code" style="color: #b3adad;"></i></button></a>
-        </div>
-      </div>
-      <div class="group relative">
-        <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-          <img src="./imagenes/fondo-diseño.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
-        </div>
-        <div class="mt-4 flex justify-between">
-          <div>
-            <h3 class="text-sm text-white">
-              <a href="">
-                <span aria-hidden="true" class="absolute inset-0"></span>
-              </a>
-                
-               Proyecto 1
-
-            </h3>
-            <p class="mt-1 text-sm text-white">Descripcion lorem3</p>
-          </div>
-          <a href="#inicio"><button class="boton-proyectos ">Code<i class="fa-light fab fa fa-code" style="color: #b3adad;"></i></button></a>
-        </div>
-      </div>
-
-      <!-- More products... -->
-    </div>
-  </div>
-</div>
-
+      
     </section>
     <footer>
         <div class="rounded-social-buttons">
