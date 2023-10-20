@@ -1,6 +1,7 @@
 body{
     background: black;
-    cursor: url(./imagenes/cursor.png), auto;
+    cursor: none;
+    background-color: black;
 }
 body h1 {
     font-size: 30px;
@@ -19,6 +20,98 @@ body p{
 
 }
 /*BURBUJAS*/
+/*NAVEGACION*/
+ul{list-style: none;}
+
+.boton {
+	width: 50px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+.lineas {
+	width: 50px;
+	height: 50px;
+	border-radius:7px;
+	margin: 0 auto;
+	padding: 7px;
+}
+
+.lineas > div {
+	height: 5px;
+	width: 100%;
+	background: white;
+	margin: 0 auto;
+	margin-top: 9px;
+	transition:all 1s;
+}
+
+.lineas:hover > div:nth-child(2) { 
+	width: 50%; margin: 0 auto;margin-top: 9px;
+}
+.lineas:hover > div:last-child { 
+	width: 30%; margin: 0 auto;margin-top: 9px;
+}
+
+.boton ul {
+    background-color: black;
+	height: 0; /* OCULTAMOS MENÚ */
+	overflow: hidden;
+	width: 300px;
+	margin-left: -118px;
+	transition:all 1.5s; 
+	
+}
+.boton ul li:first-child {
+	border: 2px solid transparent;
+	border-bottom-color:white solid 1px;
+	width: 0;
+	position: relative;
+	left: 50%;
+	margin-left: -20px
+}
+.boton ul li a {
+	display: block;
+	text-align: center;
+	padding: 15px 0;
+	color:white;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 1px solid #dadada
+}
+
+.boton ul li a:hover {
+	box-shadow:0 -5px 0 white inset;
+}
+
+.boton:hover ul {
+	height: 300px;
+}
+
+
+/*CURSOR*/
+
+.cursor-dot{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+}
+.cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 5px solid hsla(9, 0%, 199%, 0.5);
+}
+.cursor-dot, .cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+/*CURSOR*/
 .burbuja{
     border-radius: 50%;
     background-color: #fff;
@@ -151,12 +244,7 @@ body p{
 .estudios-contenedor{
     border-top: 2px rgb(66, 66, 105) solid;
 }
-.coder{
-    cursor: url(./imagenes/cursor.png), auto;
-}
-.absolute{
-    cursor: url(./imagenes/cursor.png), auto;
-}
+
 .secciones{
     row-gap: 5px;
 }
@@ -241,7 +329,6 @@ footer{
   color: #007bb5;
   background: #fefefe;
   border-color: #007bb5;
-  cursor: url(./imagenes/cursor.png), auto;
 }
 
 .rounded-social-buttons .social-button.github {
@@ -252,7 +339,6 @@ footer{
   color: #000000;
   background: #ffffff;
   border-color: #000000;
-  cursor: url(./imagenes/cursor.png), auto;
 }
 
 .rounded-social-buttons .social-button.instagram {
@@ -263,5 +349,4 @@ footer{
   color: #125688;
   background: #fefefe;
   border-color: #125688;
-  cursor: url(./imagenes/cursor.png), auto;
 }
