@@ -54,7 +54,7 @@ ul{list-style: none;}
 }
 
 .boton ul {
-    background-color: black;
+    background: black;
 	height: 0; /* OCULTAMOS MENÚ */
 	overflow: hidden;
 	width: 300px;
@@ -112,17 +112,18 @@ ul{list-style: none;}
     pointer-events: none;
 }
 .slide{
-    height: 00vh;
+    height: 100%;
     width: 100%;
-    gap: 50px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
   
 .slide img{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
+    margin-right: 5%; /* Ajusta el valor del margen derecho según tus preferencias */
+
 
 }
 
@@ -239,8 +240,99 @@ ul{list-style: none;}
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
 
+}
+.a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	transform: translate(-50%, -50%);
+	color: white;
+	overflow: hidden;
+	padding: 30px 70px;
+	font-size: 30;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	box-shadow: 0 10px 25px white;
+}
+.a:before{
+	width: 50%;
+	top: 2px;
+	left: 2px;
+	bottom: 2px;
+	content: '';
+	background: rgb(142 255 240 / 10%);
+}
+.a span:nth-child(1) {
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	top: 0;
+	left: 0;
+	background-color: white;
+	animation: animate1 2s linear infinite;
+}
+@keyframes animate1{
+	0%{
+		transform: translateX(-100%);
+	}
+	100%{
+		transform: translateX(100%);
+	}
+}
+.a span:nth-child(2) {
+	position: absolute;
+	width: 5px;
+	height: 100%;
+	top: 0;
+	right: 0;
+    background-color: white;
+    animation: animate2 2s linear infinite;
+	animation-delay: 1s;
+}
+@keyframes animate2{
+	0%{
+		transform: translateY(-100%);
+	}
+	100%{
+		transform: translateY(100%);
+	}
+}
+.a span:nth-child(3) {
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	left: 0;
+	bottom: 0;
+	background-color: white;
+	animation: animate3 2s linear infinite;
+}
+@keyframes animate3{
+	0%{
+		transform: translateX(100%);
+	}
+	100%{
+		transform: translateX(-100%);
+	}
+}
+.a span:nth-child(4) {
+	position: absolute;
+	width: 5px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: white;
+	animation: animate4 2s linear infinite;
+	animation-delay: 1s;
+}
+@keyframes animate4{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(-100%);
+	}
 }
 
 .columna-inicio3{
@@ -259,7 +351,10 @@ ul{list-style: none;}
 .estudios-contenedor{
     border-top: 2px rgb(66, 66, 105) solid;
 }
-
+.teachers{
+    display: flex;
+    gap: 6rem;
+}
 
 
 /*FINAL ESTUDIOS*/
@@ -267,8 +362,6 @@ ul{list-style: none;}
 #sobremi{
     margin-top: 40vh;
     height: 100vh;
-    background: url();
-    
 }
 
 /*FINAL PROYECTOS*/
