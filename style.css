@@ -1,7 +1,6 @@
 body{
     background: black;
     cursor: none;
-    background-color: black;
 }
 body h1 {
     font-size: 30px;
@@ -93,8 +92,8 @@ ul{list-style: none;}
 /*CURSOR*/
 
 .cursor-dot{
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     background-color: white;
 }
 .cursor-outline{
@@ -114,6 +113,7 @@ ul{list-style: none;}
 .slide{
     height: 100%;
     width: 100%;
+    margin-top: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -260,17 +260,23 @@ ul{list-style: none;}
 .estudios-contenedor{
     border-top: 2px rgb(66, 66, 105) solid;
 }
-.teachers{
-    display: flex;
-    gap: 6rem;
-}
 
 
 /*FINAL ESTUDIOS*/
-/*PROYECTOS*/
+/*ABOUT*/
 #sobremi{
-    margin-top: 40vh;
+  margin-top: 15vh;
+}
+/*ABOUT*/
+/*PROYECTOS*/
+
+#proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     height: 100vh;
+    margin-top: 25vh;
 }
 
 /*FINAL PROYECTOS*/
@@ -285,82 +291,16 @@ footer{
     height: 10vh;
 }
 
+/*FORMULARIO*/
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  white-space: nowrap;
+#contacto{
+    width: 100%;
+    height: 100vh;
 }
 
-.svg-inline--fa {
-  vertical-align: -0.200em;
-}
 
-.rounded-social-buttons {
-  text-align: center;
-}
 
-.rounded-social-buttons .social-button {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  width: 3.125rem;
-  height: 3.125rem;
-  border: 0.125rem solid transparent;
-  padding: 0;
-  text-decoration: none;
-  text-align: center;
-  color: #fefefe;
-  font-size: 1.5625rem;
-  font-weight: normal;
-  line-height: 2em;
-  border-radius: 1.6875rem;
-  transition: all 0.5s ease;
-  margin-right: 0.25rem;
-  margin-bottom: 0.25rem;
-}
 
-.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
 
-.rounded-social-buttons .fa-linkedin, .fa-github, .fa-instagram {
-  font-size: 25px;
-}
 
-.rounded-social-buttons .social-button.linkedin {
-  background: #007bb5;
-}
-
-.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
-  color: #007bb5;
-  background: #fefefe;
-  border-color: #007bb5;
-}
-
-.rounded-social-buttons .social-button.github {
-  background: #1f1c1c;
-}
-
-.rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
-  color: #000000;
-  background: #ffffff;
-  border-color: #000000;
-}
-
-.rounded-social-buttons .social-button.instagram {
-  background: #3f729b;
-}
-
-.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
-  color: #125688;
-  background: #fefefe;
-  border-color: #125688;
-}
+/*FIN FORMULARIO */
