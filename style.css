@@ -69,21 +69,12 @@ body p {
 #inicio{
   height: 100vh;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
-#inicio .inicio-imagen{
-  display: flex;
-  justify-content: center;  
-  align-items: center;
-  overflow: hidden;
-  filter: brightness(70%);
 
-}
-#inicio .inicio-imagen img{
-  height: 60vh;
-  width: 50vh;
-}
+
 
 /*FINAL ESTUDIOS*/
 /*FOOTER*/
