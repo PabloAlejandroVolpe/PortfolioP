@@ -66,34 +66,24 @@ body p {
   z-index: 1;
   pointer-events: none;
 }
-#inicio {
+#inicio{
   height: 100vh;
-  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+#inicio .inicio-imagen{
   display: flex;
+  justify-content: center;  
   align-items: center;
-  justify-content: center;
-}
+  overflow: hidden;
+  filter: brightness(70%);
 
-#inicio::before {
-  content: "";
-  position: absolute;
+}
+#inicio .inicio-imagen img{
+  height: 60vh;
   width: 50vh;
-  height: 50vh;
-  background: linear-gradient(270deg, #ffffff, #9a7a7a);
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
-
-#inicio img {
-  position: absolute;
-  width: 50%;
-  height: auto;
-  bottom: 0;
-}
-
-
 
 /*FINAL ESTUDIOS*/
 /*FOOTER*/
