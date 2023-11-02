@@ -1,119 +1,242 @@
-body{
-    background: black;
-    transition: opacity 2s;
+body {
+  background: black;
+  transition: opacity 2s;
 }
+
 body h1 {
-    font-size: 30px;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-body h2{
-    font-size: 25px;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-body p{
-    font-size: 20px;
-    color: white;
-    font-family: 'Dancing Script', cursive;
-
+  font-size: 30px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body h2 {
+  font-size: 25px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body p {
+  font-size: 20px;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+
+}
 
 .preloader {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 2s; 
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 2s;
 }
 
 .preloader img {
-    width: 300px; 
-    opacity: 1; 
-    transition: opacity 2s; 
+  width: 300px;
+  opacity: 1;
+  transition: opacity 2s;
 }
 
 .content {
-    opacity: 0;
-    transition: opacity 2s; 
+  opacity: 0;
+  transition: opacity 2s;
 }
 
-/*BURBUJAS*/
-/*NAVEGACION*/
-
-/*FIN NAVEGACION*/
-
-
-
-.cursor-dot{
-    width: 10px;
-    height: 10px;
-    background-color: white;
-}
-.cursor-outline{
-    width: 30px;
-    height: 30px;
-    border: 5px solid hsla(9, 0%, 199%, 0.5);
-}
-.cursor-dot, .cursor-outline{
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 1;
-    pointer-events: none;
+.cursor-dot {
+  width: 10px;
+  height: 10px;
+  background-color: white;
 }
 
-
-
-
-
-
-#inicio{
-    width: 100%;
-    height: 100vh;
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 5px solid hsla(9, 0%, 199%, 0.5);
 }
 
-
-/*FINAL PRESENTACION*/
-/*ESTUDIOS*/
-.estudios-contenedor{
-    border-top: 2px rgb(66, 66, 105) solid;
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
 }
+#inicio {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#inicio::before {
+  content: "";
+  position: absolute;
+  width: 50vh;
+  height: 50vh;
+  background: linear-gradient(270deg, #ffffff, #9a7a7a);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#inicio img {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  bottom: 0;
+}
+
 
 
 /*FINAL ESTUDIOS*/
-
-
-
-
 /*FOOTER*/
-
-footer{
-    margin-top: 5%;
-    width: 100%;
-    height: 10vh;
+footer {
+  margin-top: 5%;
+  width: 100%;
+  height: 10vh;
 }
 
 /*FORMULARIO*/
-
-#contacto{
-    width: 100%;
-    height: 100vh;
+#contacto {
+  width: 100%;
+  height: 100vh;
 }
+
 /*FIN FORMULARIO */
+#sobremi {
+  background-image: url('./imagenes/image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}
+
+#proyectos{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#proyectos div{
+  padding: 10px;
+}
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  background-color: black;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: black;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: black;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid black;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+.description{
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: black;
+  padding: 8px 16px;
+  background-color: white;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.swiper-navBtn{
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #4070F4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 38px;
+  color: white;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
 
 
-#sobremi{
-    background-image: url('./imagenes/image.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
 }

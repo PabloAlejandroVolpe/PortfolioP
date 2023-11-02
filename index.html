@@ -13,6 +13,8 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
     integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
     crossorigin="anonymous"></script>
+      <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   <link rel="icon" type="image/png" href="./imagenes/logo.png">
 
 </head>
@@ -36,7 +38,10 @@
   <!-- Inicio -->
   <section id="inicio">
     
+     <img src="./imagenes/landing.png" alt="">
+    
   </section>
+
   <section id="sobremi" >
     <div class="sobremi-c relative isolate overflow-hidden py-24 sm:py-32">
       <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
@@ -70,15 +75,101 @@
               <dt class="text-base leading-7 text-gray-300">Hours in courses</dt>
               <dd class="text-2xl font-bold leading-9 tracking-tight text-white">+100</dd>
             </div>
-            <div class="flex flex-col-reverse">
-              <dt class="text-base leading-7 text-gray-300">Looking</dt>
-              <dd class="text-2xl font-bold leading-9 tracking-tight text-white">Work experience</dd>
-            </div>
           </dl>
         </div>
+        
       </div>
     </div>
   </section>
+ 
+
+  <section id="proyectos">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-white text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Proyects</h2>
+      <p class="mt-2 text-white leading-8 text-gray-600">Some of the projects I have done
+
+
+        .</p>
+    </div>
+    <div class="slide-container swiper">
+      <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                         <img src="./imagenes/10.png" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="name">Proyect 1
+</h2>
+                      <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                      <button class="button">View proyect</button>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                             <img src="./imagenes/10.png" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="name">Proyect 2
+</h2>
+                      <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                      <button class="button">View proyect</button>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                           <img src="./imagenes/10.png" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="name">Proyect 3
+</h2>
+                      <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                      <button class="button">View proyect</button>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                              <img src="./imagenes/10.png" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="name">Proyect 4
+</h2>
+                      <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                      <button class="button">View proyect</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+  </div>
+  
+  </section>
+  
   <section id="estudios">
     <div class=" py-24 sm:py-32">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -186,11 +277,10 @@
             <div class="relative mt-8 flex items-center gap-x-4">
             </div>
           </article>
-          <!-- More posts... -->
         </div>
       </div>
     </div>
-    <div class="py-24 sm:py-7">
+    <div class="py-24 sm:py-7 mentores">
       <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
         <div class="max-w-2xl">
           <h2 class="text-3xl text-white font-bold tracking-tight text-gray-900 sm:text-4xl">Mentors
@@ -227,84 +317,12 @@
               </div>
             </div>
           </li>
-    
-          <!-- More people... -->
         </ul>
         
       </div>
     </div>
     
   </section>
-
-  <section id="proyectos">
-    <section class="flex flex-col justify-center max-w-6xl min-h-screen px-4 py-10 mx-auto sm:px-6">
-      <div class="flex flex-wrap items-center justify-between mb-8">
-        <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">My Projects</h2>
-      </div>
-  
-      <div class="flex flex-wrap -mx-4">
-        <div class="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
-          <img src="./imagenes/fondo-diseño.jpg" alt="Card img" class="object-cover object-center w-full h-48" />
-          <div class="flex flex-grow">
-            <div class="triangle"></div>
-            <div class="flex flex-col justify-between px-4 py-6 text">
-              <div>
-                <a href="#" class="block mb-4 text-2xl font-black text-white leading-tight hover:underline hover:text-blue-600">
-                   Title proyects
-                </a>
-                <p class="mb-4 text-white	">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla delectus corporis commodi aperiam, amet cupiditate?
-                </p>
-              </div>
-              <div>
-                <a href="#" class="inline-block pb-1 mt-2 text-base font-black text-blue-600 uppercase border-b border-transparent hover:border-blue-600">CODE - GitHub -></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
-          <img src="./imagenes/fondo-diseño.jpg" alt="Card img" class="object-cover object-center w-full h-48" />
-          <div class="flex flex-grow">
-            <div class="flex flex-col justify-between px-4 py-6 text">
-              <div>
-                <a href="#" class="block mb-4 text-2xl font-black text-white leading-tight hover:underline hover:text-blue-600">
-                   Title proyects
-                </a>
-                <p class="mb-4 text-white	">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla delectus corporis commodi aperiam, amet cupiditate?
-                </p>
-              </div>
-              <div>
-                <a href="#" class="inline-block pb-1 mt-2 text-base font-black text-blue-600 uppercase border-b border-transparent hover:border-blue-600">CODE - GitHub -></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col" >
-          <img src="./imagenes/fondo-diseño.jpg" alt="Card img" class="object-cover object-center w-full h-48" />
-          <div class="flex flex-grow">
-            <div class="triangle"></div>
-            <div class="flex flex-col justify-between px-4 py-6 text">
-              <div>
-                <a href="#" class="block mb-4 text-2xl font-black text-white leading-tight hover:underline hover:text-blue-600">
-                   Title proyects
-                </a>
-                <p class="mb-4 text-white	">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla delectus corporis commodi aperiam, amet cupiditate?
-                </p>
-              </div>
-              <div>
-                <a href="#" class="inline-block pb-1 mt-2 text-base font-black text-blue-600 uppercase border-b border-transparent hover:border-blue-600">CODE - GitHub -></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </section>
-  </section>
-  
-   
 
   <section id="contacto">
 <div class="isolate px-6 py-24 sm:py-32 lg:px-8">
@@ -411,6 +429,8 @@
     </p>
   </div>
 </footer>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <script src="app.js"></script>
 
