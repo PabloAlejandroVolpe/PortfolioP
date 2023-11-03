@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="style.css">
   <!--Tailwind-->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!--FontAwesome-->
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
     integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
@@ -613,14 +615,17 @@
  
   <!-- Inicio -->
   <section id="inicio">
-    <div></div>
+    <div class="imagen-inicio">
+      
+    </div>
   <div class="code">
 <pre>
 [
     <span class="llaves">{</span>
           <span class="json1">"author":</span> "Pablo Volpe",
-          <span class="json1">"description" :</span> "Frontend Web Developer",
-          <span class="json1">"github__profile" :</span> "https://github.com/PabloAlejandroVolpe"
+          <span class="json1">"profession" :</span> "Frontend Web Developer",
+          <span class="json1">"age" :</span> 24,
+          
     <span class="llaves">},</span>   
           <span class="json1">"engines" :</span> <span class="llaves">{</span>
                 "HTML5",
@@ -630,10 +635,11 @@
                 "TailwindCSS",
                 "Bootstrap",
                 "REST API",
+                "Wordpress"
     <span class="llaves">},</span>   
           <span class="json1">"devDependencies":</span> <span class="llaves">{</span>
                 <span>"coffe" :</span> "^1.0.0",
-                <span>"music" :</span> "Music for work (all time)",
+                <span>"music" :</span> "Music for work",
                 <span>"internet" : </span>"=< 100Mbps",
                 <span>"editor":</span> "VSCode"
      <span class="llaves">}</span>              
@@ -1026,13 +1032,13 @@
       </a>
     </div>
     <p class="mt-8 text-center text-base text-white-400">
-      &copy; 2023 Volpe Pablo, Site made with HTML5 CSS3 JavaScript and TailwindCSS.
+      &copy; 2023 Volpe Pablo, Site made with HTML5 CSS3 JavaScript, TailwindCSS, AOS and Swiper.
     </p>
   </div>
 </footer>
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="app.js"></script>
 
 </body>

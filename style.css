@@ -85,13 +85,6 @@ body p {
 #inicio .code .llaves{
   color : yellow;
 }
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; 
-  height: 90%;
-}
-
 
 
 
@@ -121,7 +114,7 @@ footer {
 }
 
 #proyectos{
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -254,7 +247,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  opacity: .1;
+  opacity: .2;
 }
 .square {
   position: relative;
