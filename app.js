@@ -75,4 +75,12 @@ let swiper = new Swiper(".slide-content", {
   }
 
 
-  
+  document.getElementById('openSidebar').addEventListener('click', function() {
+    document.getElementById('sidebar').style.width = '250px';
+    document.getElementById('sidebar').style.left = '0';
+});
+
+document.getElementById('closeSidebar').addEventListener('click', function() {
+    document.getElementById('sidebar').style.width = '0';
+    document.getElementById('sidebar').style.left = '-250px';
+});

@@ -72,6 +72,7 @@ body p {
   grid-template-columns: repeat(2, 1fr);
 }
 #inicio .code{
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,19 +92,8 @@ body p {
 
 /*FINAL ESTUDIOS*/
 /*FOOTER*/
-footer {
-  margin-top: 5%;
-  width: 100%;
-  height: 10vh;
-}
 
-/*FORMULARIO*/
-#contacto {
-  width: 100%;
-  height: 100vh;
-}
 
-/*FIN FORMULARIO */
 #sobremi {
   background-image: url('./imagenes/image.png');
   background-size: cover;
@@ -113,127 +103,7 @@ footer {
 
 }
 
-#proyectos{
-  height: 70vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-#proyectos div{
-  padding: 10px;
-}
-.slide-container{
-  max-width: 1120px;
-  width: 100%;
-  padding: 40px 0;
-}
-.slide-content{
-  margin: 0 40px;
-  overflow: hidden;
-  border-radius: 25px;
-}
-.card{
-  background-color: black;
-}
-.image-content,
-.card-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.image-content{
-  position: relative;
-  row-gap: 5px;
-  padding: 25px 0;
-}
-.overlay{
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  border-radius: 25px 25px 0 25px;
-}
-.overlay::before,
-.overlay::after{
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  height: 40px;
-  width: 40px;
-  background-color: black;
-}
-.overlay::after{
-  border-radius: 0 25px 0 0;
-  background-color: black;
-}
-.card-image{
-  position: relative;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  background: #FFF;
-  padding: 3px;
-}
-.card-image .card-img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid black;
-}
-.name{
-  font-size: 18px;
-  font-weight: 500;
-  color: white;
-}
-.description{
-  font-size: 14px;
-  color: white;
-  text-align: center;
-}
-.button{
-  border: none;
-  font-size: 16px;
-  color: black;
-  padding: 8px 16px;
-  background-color: white;
-  border-radius: 6px;
-  margin: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.swiper-navBtn{
-  color: #6E93f7;
-  transition: color 0.3s ease;
-}
-.swiper-navBtn:hover{
-  color: #4070F4;
-}
-.swiper-navBtn::before,
-.swiper-navBtn::after{
-  font-size: 38px;
-  color: white;
-}
-.swiper-button-next{
-  right: 0;
-}
-.swiper-button-prev{
-  left: 0;
-}
 
-
-@media screen and (max-width: 768px) {
-  .slide-content{
-    margin: 0 10px;
-  }
-  .swiper-navBtn{
-    display: none;
-  }
-}
 
 
 /*Background landing*/
@@ -247,7 +117,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  opacity: .2;
+  opacity: .1;
 }
 .square {
   position: relative;
@@ -938,3 +808,35 @@ footer {
     transform: translate3d(0, -50%, 0) rotate(90deg);
  }
 }
+
+
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-icon {
+  transform: translateY(-2px); /* Ajusta este valor para centrar verticalmente */
+}
+
+
+
+
+
+
+
+
+
