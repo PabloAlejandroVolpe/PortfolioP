@@ -65,6 +65,12 @@ body p {
   z-index: 1;
   pointer-events: none;
 }
+
+
+
+
+
+
 #inicio{
   height: 100vh;
   width: 100%;
@@ -81,10 +87,10 @@ body p {
   color: white;
 }
 #inicio .code .json1{
-  color: rgb(255, 0, 255);
+  color: rgb(0, 255, 47)
 }
 #inicio .code .llaves{
-  color : yellow;
+  color : rgb(227, 48, 255);
 }
 
 
@@ -100,12 +106,76 @@ body p {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-
 }
 
 
 
+/*REDES*/
+.button-row {
+  display: inline-flex;
+}
 
+.button-row > div {
+  position: relative;
+  width: 160px;
+  height: 50px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+
+.button-row > div > a {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+  font-family: sistem-ui;
+}
+
+.button-row > div > a::before,
+.button-row > div > a::after {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 160px;
+  height: 50px;
+  position: absolute;
+  border: 5px solid black;
+  box-sizing: border-box;
+  content: attr(title);
+  display: flex;
+}
+
+.button-row > div > a::before {
+  background-color: #000;
+  color: #fff;
+  transform: rotateY(0deg) translateZ(25px);
+}
+
+.button-row > div > a::after {
+  background-color: #fff;
+  border-color: #000;
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+
+.button-row > div > a:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+
+
+.main {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 40vh;
+}
+/*REDES*/
 /*Background landing*/
 .container {
   position: absolute;
@@ -809,28 +879,6 @@ body p {
  }
 }
 
-
-
-.whatsapp {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
-  background-color: #25d366;
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.whatsapp-icon {
-  transform: translateY(-2px); /* Ajusta este valor para centrar verticalmente */
-}
 
 
 
