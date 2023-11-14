@@ -112,7 +112,10 @@ body p {
 
 /*REDES*/
 .button-row {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .button-row > div {
@@ -121,8 +124,12 @@ body p {
   height: 50px;
   margin: 0 15px;
   perspective: 1000px;
+  border: solid 2px white;
 }
 
+.button-row > div:hover {
+  border: none;
+}
 .button-row > div > a {
   margin: 0;
   padding: 0;
