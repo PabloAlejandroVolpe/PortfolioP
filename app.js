@@ -17,8 +17,6 @@ window.addEventListener("mousemove", function (e) {
         { duration: 500, fill: "forwards" }
     );
 });
-
-
 //PRELOADER
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {

@@ -69,8 +69,6 @@ body p {
 
 
 
-
-
 #inicio{
   height: 100vh;
   width: 100%;
@@ -116,6 +114,7 @@ body p {
   justify-content: center;
   align-items: center;
   width: 100%;
+  
 }
 
 .button-row > div {
@@ -124,6 +123,7 @@ body p {
   height: 50px;
   margin: 0 15px;
   perspective: 1000px;
+  border: solid .1px white;
   border: solid .1px white;
 }
 
@@ -171,16 +171,6 @@ body p {
 
 .button-row > div > a:hover {
   transform: translateZ(-25px) rotateX(-90deg);
-}
-
-
-
-.main {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  height: 40vh;
 }
 /*REDES*/
 /*Background landing*/
