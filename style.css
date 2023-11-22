@@ -124,7 +124,7 @@ body p {
   height: 50px;
   margin: 0 15px;
   perspective: 1000px;
-  border: solid 2px white;
+  border: solid .1px white;
 }
 
 .button-row > div:hover {
