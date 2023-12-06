@@ -17,16 +17,5 @@ window.addEventListener("mousemove", function (e) {
         { duration: 500, fill: "forwards" }
     );
 });
-//PRELOADER
-document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(function () {
-        const preloader = document.querySelector(".preloader");
-        const content = document.querySelector(".content"); 
-        preloader.style.opacity = "0"; 
-        setTimeout(function () {
-            preloader.style.display = "none"; 
-            content.style.opacity = "1"; 
-        }, 1000); 
-    }, 3900); 
-});
+
 

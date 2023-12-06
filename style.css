@@ -1,47 +1,10 @@
 body {
-  background: black;
+  background: #151f28	;
   transition: opacity 2s;
 }
-body h1 {
-  font-size: 30px;
-  color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+:root {
+  --color-letras: #dadada;
 }
-
-body h2 {
-  font-size: 25px;
-  color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-body p {
-  font-size: 20px;
-  color: white;
-  font-family: 'Dancing Script', cursive;
-
-}
-
-.preloader {
-  position: fixed, absolute;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 1s;
-}
-
-.preloader img {
-  width: 500px;
-  opacity: 1;
-  transition: opacity 2s;
-}
-
-.content {
-  opacity: 0;
-  transition: opacity 2s;
-}
-
 .cursor-dot {
   width: 10px;
   height: 10px;
@@ -64,219 +27,105 @@ body p {
   z-index: 1;
   pointer-events: none;
 }
-
-
-
-
-#inicio{
-  height: 100vh;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-#inicio .code{
-  width: 100%;
+/*ENCABEZADO*/
+.encabezado{
+  margin-top: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#inicio .code pre{
-  color: white;
-}
-#inicio .code .json1{
-  color: rgb(36, 117, 51)
-}
-#inicio .code .llaves{
-  color : rgb(227, 48, 255);
+.encabezado img{
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  border: rgb(0, 0, 0) solid 5px;
+  box-shadow: 16px 8px 16px 8px rgba(0, 0, 0, 0.2), 20px 6px 20px 6px rgba(0, 0, 0, 0.19);
 }
 
-
-
-
-/*NAV*/
-
-/*NAV FINAL*/
-
-
-#sobremi {
-  background-image: url('./imagenes/image.png');
-  background-size: 100%;
-  background-position: top;
-  background-repeat: no-repeat;
-  height: 100vh;
-  margin-top: 160px;
-  margin-left: 10%;
-  margin-right: 10%;
+.encabezado__contenido{
+  margin-left: 25px;
 }
 
-
-
-/*REDES*/
-.button-row {
+.encabezado__contenido h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--color-letras);
+  margin: 0;
+}
+.encabezado__contenido p {
+  font-size: 1.2em;
+  color: var(--color-letras);
+  line-height: 1.6;
+  margin: 0;
+}
+@media (max-width: 700px) {
+  .encabezado{
+    display: flex;
+    flex-direction: column;
+  }
+  .encabezado__contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+ }
+.botones{
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
+  gap: 10px;
   
 }
+.boton__linkedin{
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2
+  );
+}
+.boton {
+  margin-top: 10px;
+  background-color: #003366;
+  display: inline-block;
+  color: #fff; 
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  
+}
+.boton:hover{
+  background-color: #376796;
+}
+/*ENCABEZADO FINAL*/
 
-.button-row > div {
-  position: relative;
-  width: 160px;
-  height: 50px;
-  margin: 0 15px;
-  border: solid .1px white;
-}
-.button-row > div:hover {
-  border: none;
-}
-.button-row > div > a {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transform: translateZ(-25px);
-  transition: transform 0.25s;
-  font-family: sistem-ui;
-}
 
-.button-row > div > a::before,
-.button-row > div > a::after {
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  width: 160px;
-  height: 50px;
-  position: absolute;
-  border: 5px solid black;
-  box-sizing: border-box;
-  content: attr(title);
-  display: flex;
-}
 
-.button-row > div > a::before {
-  background-color: #000;
-  color: #fff;
-  transform: rotateY(0deg) translateZ(25px);
-}
+/*ESTUDIOS*/
 
-.button-row > div > a::after {
-  background-color: #fff;
-  border-color: #000;
-  color: #000;
-  transform: rotateX(90deg) translateZ(25px);
+.estudios{
+  margin-right: 31%;
+  margin-left: 31%;
+  margin-top: 50px;
 }
-
-.button-row > div > a:hover {
-  transform: translateZ(-25px) rotateX(-90deg);
+.estudios h3{
+  font-size: 1.6em;
+  color: var(--color-letras);
 }
-	
-	.header{
-		width: 200px;
-		height: 50px;
-		position: fixed;
-		top: 0;left: 0;
-	}
-	.container{
-		width: 90%;
-		max-width: 1200px;
-		margin: auto;
-	}
-	.container .btn-menu, .logo{
-		float: left;
-		line-height:100px;
-	}
-	.container .btn-menu label{
-		color: #fff;
-		font-size: 25px;
-		cursor: pointer;
-	}
-  .btn-menu{
-    margin: 100px 100px;
+.estudios p{
+  font-size: 1em;
+  color: var(--color-letras);
+}
+.estudios dt dd{
+  color: var(--color-letras);
+}
+@media (max-width: 1000px) {
+  .estudios {
+     width: 100%;
+     margin-right: 0;
+     margin-left: 0;
   }
-	.logo h1{
-		color: #fff;
-		font-weight: 400;
-		font-size: 22px;
-		margin-left: 10px;
-	}
-	.container .menu{
-		float: right;
-		line-height: 100px;
-	}
-	.container .menu a{
-		display: inline-block;
-		padding: 15px;
-		line-height: normal;
-		text-decoration: none;
-		color: #fff;
-		transition: all 0.3s ease;
-		border-bottom: 2px solid transparent;
-		font-size: 15px;
-		margin-right: 5px;
-	}
-	.container .menu a:hover{
-		border-bottom: 2px solid #c7c7c7;
-		padding-bottom: 5px;
-	}
-	/*Fin de Estilos para el encabezado*/
-
-	/*Menù lateral*/
-	#btn-menu{
-		display: none;
-	}
-	.container-menu{
-		position: absolute;
-		width: 100%;
-		height: 100vh;
-		top: 0;left: 0;
-		transition: all 500ms ease;
-		opacity: 1;
-		visibility: hidden;
-	}
-	#btn-menu:checked ~ .container-menu{
-		opacity: 1;
-		visibility: visible;
-	}
-	.cont-menu{
-		width: 100%;
-		max-width: 250px;
-		background: #080808;
-		height: 100vh;
-		position: relative;
-		transition: all 500ms ease;
-		transform: translateX(-100%);
-	}
-	#btn-menu:checked ~ .container-menu .cont-menu{
-		transform: translateX(0%);
-	}
-	.cont-menu nav{
-		transform: translateY(15%);
-	}
-	.cont-menu nav a{
-		display: block;
-		text-decoration: none;
-		padding: 20px;
-		color: #c7c7c7;
-		border-left: 5px solid transparent;
-		transition: all 400ms ease;
-	}
-	.cont-menu nav a:hover{
-		border-left: 5px solid #c7c7c7;
-		background: #1f1f1f;
-	}
-	.cont-menu label{
-		position: absolute;
-		right: 5px;
-		top: 10px;
-		color: #fff;
-		cursor: pointer;
-		font-size: 18px;
-	}
-
-
-
-
-/*Backgrounds*/
+ }
+ /*FIN ESTUDIOS*/
