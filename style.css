@@ -45,6 +45,11 @@ body {
 .encabezado__contenido{
   margin-left: 25px;
 }
+@media  (max-width:500px){
+  .encabezado__contenido{
+    margin: 0;
+  }
+}
 
 .encabezado__contenido h1 {
   font-size: 2em;
