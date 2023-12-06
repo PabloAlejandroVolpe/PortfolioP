@@ -1,6 +1,7 @@
 body {
   background: #151f28	;
   transition: opacity 2s;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 :root {
   --color-letras: #dadada;
@@ -29,7 +30,7 @@ body {
 }
 /*ENCABEZADO*/
 .encabezado{
-  margin-top: 5%;
+  margin-top: 3%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,12 +112,13 @@ body {
 /*ESTUDIOS*/
 
 .estudios{
-  margin-right: 31%;
-  margin-left: 31%;
+  margin-right: 32%;
+  margin-left: 32%;
   margin-top: 50px;
 }
 .estudios h3{
-  font-size: 1.6em;
+  
+  font-size: 2em;
   color: var(--color-letras);
 }
 .estudios p{
@@ -126,6 +128,9 @@ body {
 .estudios dt dd{
   color: var(--color-letras);
 }
+.estudios .fecha{
+  color: gray;
+}
 @media (max-width: 1000px) {
   .estudios {
      width: 100%;
@@ -134,3 +139,10 @@ body {
   }
  }
  /*FIN ESTUDIOS*/
+
+ /*PROYECTOS*/
+
+
+
+
+ /*FIN PROYECTOS*/
