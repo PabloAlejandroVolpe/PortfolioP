@@ -177,7 +177,7 @@ body {
 }
  :root {
   --marquee-width: 100%;
-  --marquee-height: 10vh;
+  --marquee-height: 5vh;
   --marquee-elements-displayed: 5;
   --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
   --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
@@ -234,11 +234,14 @@ body {
   html { font-size: 12px; }
   :root {
     --marquee-width: 100vw;
-    --marquee-height: 16vh;
+    --marquee-height: 5vh;
     --marquee-elements-displayed: 3;
   }
   .marquee .marquee-content{
     gap: 40px;
+  }
+  .marquee{
+    border: transparent;
   }
   .marquee:before, .marquee:after { width: 1rem; }
 }
