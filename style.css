@@ -30,10 +30,16 @@ body {
 }
 /*ENCABEZADO*/
 .encabezado{
-  margin-top: 3%;
+  margin-top: 1%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.titulo-and-dark{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .encabezado svg{
   border: solid 3px rgb(0, 0, 0);
@@ -254,6 +260,21 @@ body {
   opacity: .7;
   transform: scale(1.009);
 }
+.proyecto4{
+  margin-top: 30px;
+}
+.proyecto4 img{
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
+  opacity: .6;
+}
+.proyecto4 img:hover{
+  cursor: pointer;
+  opacity: .7;
+  transform: scale(1.009);
+}
+
 @media (max-width: 1000px) {
   .proyecto-contenido .botones button{
     width: 80px;
@@ -261,6 +282,9 @@ body {
 }
 /*FIN PROYECTOS*/
 
+
+/*FIN EMAIL*/
+/*FORMULARIO*/
 .contacto{
   margin-left: 32%;
   margin-right: 32%;
@@ -347,6 +371,3 @@ body {
     margin-right: 0;
   }
 }
-
-
-

@@ -35,9 +35,12 @@ copyText.querySelector("button").addEventListener("click", function () {
 });
 
 
+//EMAIL REDIRECCION
 const enviarBoton = document.querySelector('.enviar');
-
-// Agregar un evento clic al botón
 enviarBoton.addEventListener('click', function() {
   window.location.href = 'mailto:pablo.volpe03999@gmail.com';
 });
+
+
+
+
