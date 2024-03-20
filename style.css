@@ -274,6 +274,20 @@ body {
   opacity: .7;
   transform: scale(1.009);
 }
+.proyecto5{
+  margin-top: 30px;
+}
+.proyecto4 img{
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
+  opacity: .6;
+}
+.proyecto4 img:hover{
+  cursor: pointer;
+  opacity: .7;
+  transform: scale(1.009);
+}
 
 @media (max-width: 1000px) {
   .proyecto-contenido .botones button{
